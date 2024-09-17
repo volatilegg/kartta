@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E84ADCE82C99C7350070875A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E84ADCE72C99C7350070875A /* README.md */; };
+		E88664682C9A1F0A004F7175 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = E88664672C9A1F0A004F7175 /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88664682C9A1F0A004F7175 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +115,7 @@
 			);
 			name = kartta;
 			packageProductDependencies = (
+				E88664672C9A1F0A004F7175 /* Apollo */,
 			);
 			productName = kartta;
 			productReference = E84ADCB82C98972C0070875A /* kartta.app */;
@@ -193,6 +196,9 @@
 			);
 			mainGroup = E84ADCAF2C98972C0070875A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E88664662C9A1F0A004F7175 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E84ADCB92C98972C0070875A /* Products */;
 			projectDirPath = "";
@@ -613,6 +619,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E88664662C9A1F0A004F7175 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E88664672C9A1F0A004F7175 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E88664662C9A1F0A004F7175 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E84ADCB02C98972C0070875A /* Project object */;
 }
