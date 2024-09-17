@@ -45,11 +45,6 @@
 			path = karttaTests;
 			sourceTree = "<group>";
 		};
-		E84ADCD62C98972D0070875A /* karttaUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = karttaUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +78,6 @@
 				E84ADCE72C99C7350070875A /* README.md */,
 				E84ADCBA2C98972C0070875A /* kartta */,
 				E84ADCCC2C98972D0070875A /* karttaTests */,
-				E84ADCD62C98972D0070875A /* karttaUITests */,
 				E84ADCB92C98972C0070875A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +102,7 @@
 				E84ADCB42C98972C0070875A /* Sources */,
 				E84ADCB52C98972C0070875A /* Frameworks */,
 				E84ADCB62C98972C0070875A /* Resources */,
+				E84ADCED2C99C86D0070875A /* swift-format */,
 			);
 			buildRules = (
 			);
@@ -158,9 +153,6 @@
 			);
 			dependencies = (
 				E84ADCD52C98972D0070875A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E84ADCD62C98972D0070875A /* karttaUITests */,
 			);
 			name = karttaUITests;
 			packageProductDependencies = (
@@ -237,6 +229,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E84ADCED2C99C86D0070875A /* swift-format */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "swift-format";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swift-format >/dev/null; then\n    swift-format lint -r ${PROJECT_DIR} --configuration .swift-format.json\n    exit 0\nelse\n    echo \"warning: swift-format not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E84ADCB42C98972C0070875A /* Sources */ = {
@@ -402,6 +416,7 @@
 				DEVELOPMENT_TEAM = FPU83P3ULU;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -413,7 +428,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
@@ -452,7 +467,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.6;
