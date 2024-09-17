@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E84ADCE82C99C7350070875A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E84ADCE72C99C7350070875A /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E84ADCCA2C98972D0070875A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		E84ADCB82C98972C0070875A /* kartta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kartta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84ADCC92C98972D0070875A /* karttaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = karttaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84ADCD32C98972D0070875A /* karttaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = karttaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84ADCE72C99C7350070875A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		E84ADCAF2C98972C0070875A = {
 			isa = PBXGroup;
 			children = (
+				E84ADCE72C99C7350070875A /* README.md */,
 				E84ADCBA2C98972C0070875A /* kartta */,
 				E84ADCCC2C98972D0070875A /* karttaTests */,
 				E84ADCD62C98972D0070875A /* karttaUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84ADCE82C99C7350070875A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
